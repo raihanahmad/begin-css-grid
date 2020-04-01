@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns in Grid</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 100px 200px; */
+            /* grid-template-columns: auto 100px auto; */
+            /* grid-template-columns: repeat(3, auto); */
+            grid-template-columns: 1fr 2fr 4fr;
+            grid-gap: 1rem;
+        }
+
+        .item {
+            padding: 1rem;
+            background: #c4c4c4;
+            text-align: center;
+            font-size: 1.4rem;
+            border: solid 1px #333;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            margin-top: 1rem;
+            grid-gap: .5rem;
+        }
+        section {
+            padding: 1rem;
+            border: solid 3px #999;
+            font-size: 1.5rem;
+        }
+
+        aside{
+            padding: .7rem;
+            border: solid 3px #999;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">grid content 1</div>
+        <div class="item">grid content 2</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+        <div class="item">grid content 3</div>
+    </div>
+
+    <main>
+        <section>
+            <h2>grid is very easy man!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, cumque quam, quibusdam cupiditate rem blanditiis repellendus debitis alias provident molestias distinctio nemo delectus dolor maxime velit consectetur eligendi assumenda, vel natus voluptates ad deserunt ut? Tenetur voluptatum ad facere?</p>
+        </section>
+        
+        <aside>
+            <h3>small content</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, reprehenderit architecto quibusdam ad ipsam iste dicta exercitationem rerum commodi?</p>
+        </aside>
+    </main>
+</body>
+</html>

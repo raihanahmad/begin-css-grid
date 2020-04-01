@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaning of grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .box {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+            background: #e9d9d9;
+            border: 1px solid #333;
+        }
+
+        .box:nth-child(1) {
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-column: 1 /span 3 ;
+            grid-row: 1 /span 2;
+        }
+
+        .box:nth-child(10) {
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-column: 3 /span 4 ;
+            grid-row: 3 /span 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="box">Gid Box 1</div>
+        <div class="box">Gid Box 2</div>
+        <div class="box">Gid Box 3</div>
+        <div class="box">Gid Box 4</div>
+        <div class="box">Gid Box 5</div>
+        <div class="box">Gid Box 6</div>
+        <div class="box">Gid Box 7</div>
+        <div class="box">Gid Box 8</div>
+        <div class="box">Gid Box 9</div>
+        <div class="box">Gid Box 10</div>
+        <div class="box">Gid Box 11</div>
+        <div class="box">Gid Box 12</div>
+        <div class="box">Gid Box 13</div>
+        <div class="box">Gid Box 14</div>
+        <div class="box">Gid Box 15</div>
+        <div class="box">Gid Box 16</div>
+        <div class="box">Gid Box 17</div>
+        <div class="box">Gid Box 18</div>
+        <div class="box">Gid Box 19</div>
+    </div>
+</body>
+</html>
